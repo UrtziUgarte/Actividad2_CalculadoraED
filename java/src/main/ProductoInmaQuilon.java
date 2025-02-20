@@ -21,28 +21,54 @@ public class ProductoInmaQuilon {
         Scanner sc = new Scanner(System.in);
         char opcion;
         do{
-            System.out.println("a. Multiplicar dos numeros reales");
-            System.out.println("b. Multiplicar dos numeros enteros");
-            System.out.println("c. Multiplicar tres numeros reales");
-            System.out.println("d. Calcular la potencia");
-            System.out.println("x. Salir");
+            System.out.println("A. Multiplicar dos numeros reales");
+            System.out.println("B. Multiplicar dos numeros enteros");
+            System.out.println("C. Multiplicar tres numeros reales");
+            System.out.println("D. Calcular la potencia");
+            System.out.println("X. Salir");
 
             opcion = sc.next().toUpperCase().charAt(0);
             switch(opcion){
-                case 'a':
-                    System.out.println(ProductoInmaQuilon.reales(-1,3));
+                case 'A':
+                    System.out.println("Introduce un numero");
+                    double real1 = sc.nextDouble();
+                    System.out.println("Introduce otro");
+                    double real2 = sc.nextDouble();
+                    System.out.println("Resultado: " + ProductoInmaQuilon.reales(real1, real2));
                     break;
-                case 'b':
-                    System.out.println(ProductoInmaQuilon.enteros(2,4));
+                case 'B':
+                    System.out.println("Introduce un numero");
+                    int entero1 = sc.nextInt();
+                    System.out.println("Introduce otro");
+                    int entero2 = sc.nextInt();
+                    System.out.println("Resultado: " + ProductoInmaQuilon.enteros(entero1, entero2) );
                     break;
-                case 'c':
-                    System.out.println(ProductoInmaQuilon.tresNumeros(4,2,1));
+                case 'C':
+                    System.out.println("Introduce el primer numero");
+                    double a = sc.nextDouble();
+                    System.out.println("Introduce el segundo numero");
+                    double b = sc.nextDouble();
+                    System.out.println("Introduce el tercer numero");
+                    double c = sc.nextDouble();
+                    System.out.println("Resultado: " + ProductoInmaQuilon.tresNumeros(a, b, c));
                     break;
-                case 'd':
-                    System.out.println(ProductoInmaQuilon.potencia(4,2));
+                case 'D':
+                    System.out.println("Introduce la base");
+                    double base = sc.nextDouble();
+                    System.out.println("Introduce el exponente");
+                    double exp = sc.nextDouble();
+                    System.out.println("Resultado: " + ProductoInmaQuilon.potencia(base, exp));
+                    break;
+                case 'X':
+                    System.out.println("Fin programa");
                     break;
             }
-        }while (sc.nextInt() != 'X');
+        }while (opcion != 'X');
+
+        sc.close();
+
     }
 
-}
+
+    }
+
