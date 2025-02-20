@@ -1,7 +1,13 @@
 package main;
 
 import java.util.Scanner;
-
+/**
+ * Clase que proporciona un menú para distintas operaciones.
+ * @author Urtzi Ugarte
+ * @author Inma Quilon
+ * @see RestaUrtziUgarte
+ * @see ProductoInmaQuilon
+ */
 public class Main {
 
     public static void menu() {
