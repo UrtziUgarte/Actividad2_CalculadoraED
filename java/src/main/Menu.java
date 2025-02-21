@@ -8,9 +8,9 @@ import java.util.Scanner;
  * @see RestaUrtziUgarte
  * @see ProductoInmaQuilon
  */
-public class Main {
+public class Menu {
 
-    public static void menu() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         char opcion;
         do {
