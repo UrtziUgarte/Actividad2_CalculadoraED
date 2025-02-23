@@ -5,8 +5,10 @@ import java.util.Scanner;
  * Clase que proporciona un menú para distintas operaciones.
  * @author Urtzi Ugarte
  * @author Inma Quilon
+ * @author Sara Martinez
  * @see RestaUrtziUgarte
  * @see ProductoInmaQuilon
+ * @see SumaSaraMartinez
  */
 public class Menu {
 
@@ -15,15 +17,15 @@ public class Menu {
         char opcion;
         do {
             System.out.println("Que clase quieres hacer?");
-            // System.out.println("Suma (S)");
+            System.out.println("Suma (S)");
             System.out.println("Resta (R)");
             System.out.println("Producto (P)");
             System.out.println("Salir (X)");
 
             opcion = sc.next().toUpperCase().charAt(0);
             switch (opcion) {
-               /* case 'S':
-                    Suma.menu();*/
+               case 'S':
+                    main.SumaSaraMartinez.menu();
                 case 'R':
                     main.RestaUrtziUgarte.menu();
                 case 'P':
