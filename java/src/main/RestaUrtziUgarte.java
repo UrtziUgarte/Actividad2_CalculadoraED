@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /* Urtzi Ugarte Pampin
 Usuario de GitHub: UrtziUgarte
+repositorio GitHub: https://github.com/UrtziUgarte/Actividad2_CalculadoraED.git
 */
 public class RestaUrtziUgarte {
 
