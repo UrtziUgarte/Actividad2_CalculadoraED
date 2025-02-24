@@ -1,5 +1,4 @@
 package main;
-
 import java.util.Scanner;
 /**
  * Clase que proporciona un menú para distintas operaciones.
@@ -8,7 +7,7 @@ import java.util.Scanner;
  * @see RestaUrtziUgarte
  * @see ProductoInmaQuilon
  */
-public class Menu {
+public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -23,11 +22,11 @@ public class Menu {
             opcion = sc.next().toUpperCase().charAt(0);
             switch (opcion) {
                /* case 'S':
-                    Suma.menu();*/
+                    Suma.menu(); */
                 case 'R':
-                    main.RestaUrtziUgarte.menu();
+                    RestaUrtziUgarte.menu();
                 case 'P':
-                    main.ProductoInmaQuilon.menu();
+                    ProductoInmaQuilon.menu();
                 case 'X':
                     System.out.println("Salir del programa");
                     break;

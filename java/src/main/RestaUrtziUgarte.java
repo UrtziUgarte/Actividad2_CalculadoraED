@@ -7,7 +7,7 @@ Usuario de GitHub: UrtziUgarte
 */
 public class RestaUrtziUgarte {
 
-    private double valorAcumulado;
+    private static double valorAcumulado;
 
     public RestaUrtziUgarte() {
         this.valorAcumulado = 0;
@@ -44,12 +44,12 @@ public class RestaUrtziUgarte {
         return a - b - c;
     }
 
-    public double getValorAcumulado() {
-        return this.valorAcumulado;
+    public static double getValorAcumulado() {
+        return valorAcumulado;
     }
 
-    public double restaValorAcumulado(double a) {
-        return this.valorAcumulado -= a;
+    public static double restaValorAcumulado(double a) {
+        return valorAcumulado -= a;
     }
 
     public static void menu() {
