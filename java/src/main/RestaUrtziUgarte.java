@@ -14,7 +14,7 @@ public class RestaUrtziUgarte {
     }
 
     /**
-     *
+     *Resta de dos números reales, tendrá 2 parámetros de entrada y uno de salida que será la solución.
      * @param a El primer parametro, numero real, de la resta
      * @param b El segundo parametro, numero real, de la resta
      * @return El resultado
@@ -24,7 +24,7 @@ public class RestaUrtziUgarte {
     }
 
     /**
-     *
+     *Resta de dos números enteros, tendrá 2 parámetros de entrada y uno de salida que será la solución.
      * @param a El primer parametro, numero entero, de la resta
      * @param b El segundo parametro, numero entero, de la resta
      * @return El resultado
@@ -34,7 +34,7 @@ public class RestaUrtziUgarte {
     }
 
     /**
-     *
+     *Resta de tres números reales, tendrá 3 parámetros de entrada y uno de salida que será la solución.
      * @param a El primer parametro, numero real, de la resta
      * @param b El segundo parametro, numero real, de la resta
      * @param c El tercer parametro, numero real, de la resta
@@ -44,6 +44,11 @@ public class RestaUrtziUgarte {
         return a - b - c;
     }
 
+    /**
+     * Resta con valor acumulado, tendrá un parámetro de entrada y la clase deberá de guardar el valor
+     * acumulado.
+     * @return resultado del valor acumulado.
+     */
     public static double getValorAcumulado() {
         return valorAcumulado;
     }
